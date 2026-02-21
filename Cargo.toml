@@ -1,0 +1,20 @@
+[package]
+name = "burn_engine"
+version = "1.0.0"
+edition = "2021"
+authors = ["BurnEngine CLI"]
+description = "🔥 Advanced CLI Burning Engine with modern UI"
+
+[[bin]]
+name = "burn"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+dialoguer = "=0.11"
+colored = "=2"
+indicatif = "=0.17"
+crossbeam-channel = "=0.5"
+rfd = "=0.14"
+ctrlc = "=3"
+anyhow = "=1"
